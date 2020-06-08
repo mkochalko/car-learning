@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     let ctx = canvasEle.getContext("2d");
     ctx.fillStyle = "gray";
     ctx.fillRect(0, 0, canvasEle.width, canvasEle.height);
-    let view = new View(ctx)
+    let view = new View(ctx, canvasEle.width, canvasEle.height)
     view.start()
     console.log('test')
 })
